@@ -80,6 +80,7 @@ steps:
       echo ${OCI_WORKSPACE_DIR}
       cd ${OCI_WORKSPACE_DIR}
       ls
+      tree -L 3
       cd helm/node-service
       export BUILDRUN_HASH=${BUILDRUN_HASH}
       originalChartfile="Chart.yaml"
