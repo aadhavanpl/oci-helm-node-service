@@ -77,11 +77,10 @@ steps:
     command: |
       pwd  
       ls
-      echo ${OCI_WORKSPACE_DIR}
-      cd ${OCI_WORKSPACE_DIR}
-      ls
+      echo "---${OCI_WORKSPACE_DIR}---"
+      ls -l
       cd helm
-      ls
+      ls -l
       cd node-service
       export BUILDRUN_HASH=${BUILDRUN_HASH}
       originalChartfile="Chart.yaml"
